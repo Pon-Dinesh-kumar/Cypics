@@ -43,6 +43,8 @@ public class register_complaint extends AppCompatActivity implements AdapterView
     TextView ensemblePredictionTextView;
     TextView ensemblePredictionResultTextView;
 
+    private TextView serverStatusTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,7 @@ public class register_complaint extends AppCompatActivity implements AdapterView
         e3 = findViewById(R.id.editTextTextPersonName3);
         e4 = findViewById(R.id.editTextTextPersonName4);
         e5 = findViewById(R.id.editTextTextMultiLine);
+        serverStatusTextView = findViewById(R.id.serverStatusTextView);
 
         s1 = findViewById(R.id.spinner);
 
@@ -119,6 +122,34 @@ public class register_complaint extends AppCompatActivity implements AdapterView
             ensemblePredictionTextView.setVisibility(View.VISIBLE);
             ensemblePredictionResultTextView.setVisibility(View.VISIBLE);
         }
+        //status checker
+        // Make a request to the server to check its status
+        String url = "https://flask-ml-model-epics.azurewebsites.net/predict";
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                // The server is ready, set the status to green
+                try {
+                    if (response != null && response.getInt("status") == 405) {
+                        serverStatusTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+                    } else {
+                        serverStatusTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+                    }
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // There was an error connecting to the server, set the status to red
+                serverStatusTextView.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+            }
+        });
+
+// Add the request to the RequestQueue
+        RequestQueue queue = Volley.newRequestQueue(this);
+        queue.add(request);
         // Set an OnClickListener for the button
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -169,7 +200,9 @@ public class register_complaint extends AppCompatActivity implements AdapterView
                             e.printStackTrace();
                         }
                     }
-                }, new Response.ErrorListener() {
+                },
+
+                        new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         error.printStackTrace();

@@ -30,7 +30,9 @@
         android:drawablePadding="20dp"
         android:hint="User Name"
         android:layout_below="@+id/textView1"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:autofillHints="user name"
+         />
 
     <EditText
         android:id="@+id/password1"
@@ -38,9 +40,13 @@
         android:background="#30ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawableLeft="@drawable/password_icon"
         android:drawablePadding="20dp"
         android:hint="Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/purple_700"
+        app:passwordToggleDrawable="@drawable/ic_visibility"
+        android:inputType="text"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/username1"/>
 

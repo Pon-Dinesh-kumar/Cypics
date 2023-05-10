@@ -7,6 +7,7 @@
     android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="672dp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -88,7 +89,6 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
-
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
@@ -101,6 +101,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
         <TextView
             android:id="@+id/predictionTextView"
             android:layout_width="wrap_content"
@@ -113,6 +114,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/textView8"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
         <TextView
             android:id="@+id/prediction1TextView"
             android:layout_width="wrap_content"
@@ -125,7 +127,7 @@
             android:textStyle="bold"
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/predictionTextView"
-            app:layout_constraintTop_toBottomOf="@+id/predictionTextView"/>
+            app:layout_constraintTop_toBottomOf="@+id/predictionTextView" />
 
 
         <TextView
@@ -141,6 +143,7 @@
             android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/prediction1TextView"
             app:layout_constraintTop_toBottomOf="@+id/prediction1TextView" />
+
         <TextView
             android:id="@+id/ensemblePredictionTextView"
             android:layout_width="wrap_content"
@@ -166,7 +169,6 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
 
 
         <EditText
@@ -239,6 +241,16 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
+            android:id="@+id/serverStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Status"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
             android:id="@+id/prediction1ResultTextView"
             android:layout_width="158dp"
             android:layout_height="20dp"
@@ -287,7 +299,6 @@
             app:layout_constraintVertical_bias="0.0" />
 
 
-
         <EditText
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="wrap_content"
@@ -321,12 +332,14 @@
             android:layout_height="48dp"
             android:width="170dp"
             android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:hint="Select Date"
-            android:inputType="textPersonName"
+            android:inputType="date"
             app:layout_constraintBottom_toBottomOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
             app:layout_constraintTop_toTopOf="@+id/textView7"
-            app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/button"
@@ -339,6 +352,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ensemblePredictionTextView" />
+
         <Button
             android:id="@+id/onpresspredict"
             android:layout_width="110dp"

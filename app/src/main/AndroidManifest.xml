@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cypics">
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Cypics">
+        android:theme="@style/Theme.Cypics"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".chat_screen_kotlin"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -44,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".help_iprules"
-            android:exported="false" />
-        <activity
-            android:name=".chat_screen"
             android:exported="false" />
         <activity
             android:name=".track"
