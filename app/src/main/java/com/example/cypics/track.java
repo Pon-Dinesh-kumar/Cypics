@@ -23,7 +23,7 @@ public class track extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track);
         getSupportActionBar().hide();
-        spinner = findViewById(R.id.spinner);
+        spinner = findViewById(R.id.state);
 
         arrType.add("Andhra Pradesh");
         arrType.add("Arunachal Pradesh");

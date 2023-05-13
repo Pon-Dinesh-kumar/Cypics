@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        b1 = findViewById(R.id.button2);
-        b2 = findViewById(R.id.button3);
+        b1 = findViewById(R.id.buttonSign_Up);
+        b2 = findViewById(R.id.Sign_In_button);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

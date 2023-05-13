@@ -55,16 +55,15 @@ public class register_complaint extends AppCompatActivity implements AdapterView
         dateformat = findViewById(R.id.dateformatID);
         editText = findViewById(R.id.editTextpredict);
         b2 = findViewById(R.id.onpresspredict);
-        s1 = findViewById(R.id.spinner);
-        b1 = findViewById(R.id.button);
-        e1 = findViewById(R.id.editTextTextPersonName);
-        e2 = findViewById(R.id.editTextTextPersonName2);
-        e3 = findViewById(R.id.editTextTextPersonName3);
-        e4 = findViewById(R.id.editTextTextPersonName4);
-        e5 = findViewById(R.id.editTextTextMultiLine);
+        s1 = findViewById(R.id.Categoryspinner);
+        b1 = findViewById(R.id.Submit);
+        e1 = findViewById(R.id.Incident_Occured_In);
+        e2 = findViewById(R.id.editTime);
+        e3 = findViewById(R.id.Sub_Category);
+        e4 = findViewById(R.id.Repoting_Delay);
+        e5 = findViewById(R.id.Additional_Info);
         serverStatusTextView = findViewById(R.id.serverStatusTextView);
 
-        s1 = findViewById(R.id.spinner);
 
         s1.setOnItemSelectedListener(this);
         aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item,ss1);

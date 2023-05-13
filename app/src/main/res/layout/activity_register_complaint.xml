@@ -14,20 +14,20 @@
         tools:context=".register_complaint">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/Incident"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="Incident Occured In"
+            android:text="Incident_Occured_In"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/Time"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="44dp"
@@ -35,11 +35,11 @@
             android:paddingBottom="5dp"
             android:text="Time"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintStart_toStartOf="@+id/Incident"
+            app:layout_constraintTop_toBottomOf="@+id/Incident" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/Category"
             android:layout_width="130dp"
             android:layout_height="40dp"
             android:layout_marginTop="36dp"
@@ -48,24 +48,24 @@
             android:text="Category"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintStart_toStartOf="@+id/Time"
+            app:layout_constraintTop_toBottomOf="@+id/Time" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/Categoryspinner"
             android:layout_width="150dp"
             android:layout_height="48dp"
             android:autofillHints="Type"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/Category"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.524"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/Category"
+            app:layout_constraintTop_toTopOf="@+id/Category"
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/Sub_Categoryview"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="36dp"
@@ -73,11 +73,11 @@
             android:paddingBottom="10dp"
             android:text="Sub Category"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintStart_toStartOf="@+id/Category"
+            app:layout_constraintTop_toBottomOf="@+id/Category" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/Additional_Infoview"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginTop="48dp"
@@ -85,12 +85,12 @@
             android:paddingBottom="5dp"
             android:text="Additional Info"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintStart_toStartOf="@+id/Repoting_Delayview"
+            app:layout_constraintTop_toBottomOf="@+id/Repoting_Delayview" />
 
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/scenario"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
@@ -99,8 +99,8 @@
             android:paddingBottom="5dp"
             android:text="scenario"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintStart_toStartOf="@+id/Additional_Infoview"
+            app:layout_constraintTop_toBottomOf="@+id/Additional_Infoview" />
 
         <TextView
             android:id="@+id/predictionTextView"
@@ -112,8 +112,8 @@
             android:paddingBottom="5dp"
             android:text="API Response:"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintStart_toStartOf="@+id/scenario"
+            app:layout_constraintTop_toBottomOf="@+id/scenario" />
 
         <TextView
             android:id="@+id/prediction1TextView"
@@ -159,7 +159,7 @@
             app:layout_constraintTop_toBottomOf="@+id/prediction2TextView" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/Repoting_Delayview"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
@@ -167,12 +167,12 @@
             android:paddingBottom="5dp"
             android:text="Repoting Delay"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView7"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintStart_toStartOf="@+id/Date"
+            app:layout_constraintTop_toBottomOf="@+id/Date" />
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/Incident_Occured_In"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginStart="20dp"
@@ -181,37 +181,37 @@
             android:hint="Enter here"
             android:inputType="textPersonName"
             android:textAlignment="textStart"
-            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintBottom_toBottomOf="@+id/Incident"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="@+id/textView3" />
+            app:layout_constraintStart_toEndOf="@+id/Incident"
+            app:layout_constraintTop_toTopOf="@+id/Incident" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTime"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:width="170dp"
             android:ems="10"
             android:hint="Enter here"
             android:inputType="time|number"
-            app:layout_constraintBottom_toBottomOf="@+id/textView4"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toTopOf="@+id/textView4" />
+            app:layout_constraintBottom_toBottomOf="@+id/Time"
+            app:layout_constraintStart_toStartOf="@+id/Incident_Occured_In"
+            app:layout_constraintTop_toTopOf="@+id/Time" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/Sub_Category"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:width="170dp"
             android:ems="10"
             android:hint="Enter here"
             android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="@+id/textView2"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintTop_toTopOf="@+id/textView2" />
+            app:layout_constraintBottom_toBottomOf="@+id/Sub_Categoryview"
+            app:layout_constraintStart_toStartOf="@+id/editTime"
+            app:layout_constraintTop_toTopOf="@+id/Sub_Categoryview" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/Additional_Info"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginStart="4dp"
@@ -220,9 +220,9 @@
             android:gravity="start|top"
             android:hint="Enter here"
             android:inputType="textMultiLine"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintBottom_toBottomOf="@+id/Additional_Infoview"
+            app:layout_constraintStart_toStartOf="@+id/Repoting_Delay"
+            app:layout_constraintTop_toTopOf="@+id/Additional_Infoview"
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
@@ -235,9 +235,9 @@
             android:gravity="start|top"
             android:hint="Enter your scenario "
             android:inputType="textMultiLine"
-            app:layout_constraintBottom_toBottomOf="@+id/textView8"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-            app:layout_constraintTop_toTopOf="@+id/textView8"
+            app:layout_constraintBottom_toBottomOf="@+id/scenario"
+            app:layout_constraintStart_toStartOf="@+id/Repoting_Delay"
+            app:layout_constraintTop_toTopOf="@+id/scenario"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -247,8 +247,8 @@
             android:padding="8dp"
             android:text="Status"
             android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintStart_toStartOf="@+id/Additional_Infoview"
+            app:layout_constraintTop_toBottomOf="@+id/Additional_Infoview" />
 
         <TextView
             android:id="@+id/prediction1ResultTextView"
@@ -262,7 +262,7 @@
             android:textSize="16sp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/prediction1TextView"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintStart_toStartOf="@+id/Repoting_Delay"
             app:layout_constraintTop_toTopOf="@+id/prediction1TextView"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -278,7 +278,7 @@
             android:textSize="16sp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/prediction2TextView"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintStart_toStartOf="@+id/Repoting_Delay"
             app:layout_constraintTop_toTopOf="@+id/prediction2TextView"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -294,13 +294,13 @@
             android:textSize="16sp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/ensemblePredictionTextView"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintStart_toStartOf="@+id/Repoting_Delay"
             app:layout_constraintTop_toTopOf="@+id/ensemblePredictionTextView"
             app:layout_constraintVertical_bias="0.0" />
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/Repoting_Delay"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:width="170dp"
@@ -309,12 +309,12 @@
             android:includeFontPadding="true"
             android:inputType="textMultiLine"
             android:textAlignment="gravity"
-            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintBottom_toBottomOf="@+id/Repoting_Delayview"
             app:layout_constraintStart_toStartOf="@+id/dateformatID"
-            app:layout_constraintTop_toTopOf="@+id/textView6" />
+            app:layout_constraintTop_toTopOf="@+id/Repoting_Delayview" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/Date"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
@@ -322,8 +322,8 @@
             android:paddingBottom="5dp"
             android:text="Date"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/Sub_Categoryview"
+            app:layout_constraintTop_toBottomOf="@+id/Sub_Categoryview"
             tools:ignore="MissingConstraints" />
 
         <EditText
@@ -336,13 +336,13 @@
             android:focusableInTouchMode="false"
             android:hint="Select Date"
             android:inputType="date"
-            app:layout_constraintBottom_toBottomOf="@+id/textView7"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-            app:layout_constraintTop_toTopOf="@+id/textView7"
+            app:layout_constraintBottom_toBottomOf="@+id/Date"
+            app:layout_constraintStart_toStartOf="@+id/Sub_Category"
+            app:layout_constraintTop_toTopOf="@+id/Date"
             app:layout_constraintVertical_bias="1.0" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Submit"
             android:layout_width="110dp"
             android:layout_height="48dp"
             android:layout_marginTop="124dp"
@@ -374,7 +374,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/Submit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

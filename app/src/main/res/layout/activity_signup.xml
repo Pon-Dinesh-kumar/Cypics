@@ -8,7 +8,7 @@
     android:background="@drawable/appbg"
     tools:context=".SignupActivity">
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/Sign_Up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
@@ -27,7 +27,7 @@
         android:background="#30ffffff"
         android:hint="User Name"
         android:padding="15dp"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/Sign_Up"
         android:layout_marginTop="50dp"/>
 
     <EditText
