@@ -32,7 +32,7 @@ public class register_complaint extends AppCompatActivity implements AdapterView
     Button b1;
     Button b2;
     Spinner s1;
-    String[] ss1 = {"Ministry of Home Affairs", "Indian Cybercrime Coordination Center"};
+    String[] ss1 = {"Online financial fraud", "hacking/ Damage to computer","cryptocurrency fraud","Cyber terrorism","ransomware","Online gambling","Online cybertrafficking","any other cybercrime"};
     ArrayAdapter aa;
     int year, month, day;
     TextView predictionTextView;

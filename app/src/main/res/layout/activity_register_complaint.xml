@@ -85,8 +85,8 @@
             android:paddingBottom="5dp"
             android:text="Additional Info"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/Repoting_Delayview"
-            app:layout_constraintTop_toBottomOf="@+id/Repoting_Delayview" />
+            app:layout_constraintStart_toStartOf="@+id/Reporting_Delayview"
+            app:layout_constraintTop_toBottomOf="@+id/Reporting_Delayview" />
 
 
         <TextView
@@ -159,13 +159,13 @@
             app:layout_constraintTop_toBottomOf="@+id/prediction2TextView" />
 
         <TextView
-            android:id="@+id/Repoting_Delayview"
+            android:id="@+id/Reporting_Delayview"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="40dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="Repoting Delay"
+            android:text="Reporting Delay"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/Date"
             app:layout_constraintTop_toBottomOf="@+id/Date" />
@@ -309,9 +309,9 @@
             android:includeFontPadding="true"
             android:inputType="textMultiLine"
             android:textAlignment="gravity"
-            app:layout_constraintBottom_toBottomOf="@+id/Repoting_Delayview"
+            app:layout_constraintBottom_toBottomOf="@+id/Reporting_Delayview"
             app:layout_constraintStart_toStartOf="@+id/dateformatID"
-            app:layout_constraintTop_toTopOf="@+id/Repoting_Delayview" />
+            app:layout_constraintTop_toTopOf="@+id/Reporting_Delayview" />
 
         <TextView
             android:id="@+id/Date"
