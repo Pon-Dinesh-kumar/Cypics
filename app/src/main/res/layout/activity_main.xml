@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.115" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSign_Up"
         android:background="@drawable/round_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,12 +32,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/Sign_In_button"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Sign_In_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
@@ -45,6 +45,6 @@
         android:text="Sign In / Log In"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

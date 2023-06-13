@@ -14,7 +14,7 @@ public class help_iprules extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_iprules);
         getSupportActionBar().setTitle("Help/IP Rules");
-        button = findViewById(R.id.button4);
+        button = findViewById(R.id.buttonHacking);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -22,7 +22,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button6);
+        button = findViewById(R.id.buttonPhishing);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +30,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button7);
+        button = findViewById(R.id.buttonCyberstalking);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,7 +38,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button8);
+        button = findViewById(R.id.buttonIdentity_theft);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,7 +46,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button9);
+        button = findViewById(R.id.buttonCyberbullying);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +54,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button10);
+        button = findViewById(R.id.buttonOnline_defamation);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +62,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button11);
+        button = findViewById(R.id.buttonChild_pornography);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +70,7 @@ public class help_iprules extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button = findViewById(R.id.button12);
+        button = findViewById(R.id.buttonCyber_terrorism);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
