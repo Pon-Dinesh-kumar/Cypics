@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "670161841966",
+    "firebase_url": "https://cypics-epics-default-rtdb.firebaseio.com",
+    "project_id": "cypics-epics",
+    "storage_bucket": "cypics-epics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670161841966:android:2146d1304d7404a0ed54bf",
+        "android_client_info": {
+          "package_name": "com.example.cypics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670161841966-nbulkvumtsvhgks8app1tv8hdgpnskgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-j9nPZiDiYUh_QRznKVEZWMf2UjCy8x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670161841966-nbulkvumtsvhgks8app1tv8hdgpnskgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

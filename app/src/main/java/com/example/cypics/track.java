@@ -1,14 +1,16 @@
 package com.example.cypics;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -17,13 +19,21 @@ public class track extends AppCompatActivity {
     Spinner spinner;
     ArrayList<String> arrType = new ArrayList<>();
     EditText dateformat;
+    TextView statusshow;
+    EditText Trackid;
     int year,month,day;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track);
         getSupportActionBar().hide();
-        spinner = findViewById(R.id.state);
+        spinner = findViewById(R.id.spinner);
+        Trackid =findViewById(R.id.editText_track_id);
+        Intent intent = getIntent();
+        String caseNumber = intent.getStringExtra("caseNumber");
+        Trackid.setText(caseNumber);
+
+
 
         arrType.add("Andhra Pradesh");
         arrType.add("Arunachal Pradesh");
@@ -65,6 +75,9 @@ public class track extends AppCompatActivity {
 
         ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, arrType);
         spinner.setAdapter(spinnerAdapter);
+
+
+        statusshow=findViewById(R.id.textView9);
 
         dateformat=findViewById(R.id.dateformatID);
         Calendar calendar=Calendar.getInstance();

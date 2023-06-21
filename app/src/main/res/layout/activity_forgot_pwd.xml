@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/appbg"
+    tools:context=".forgot_pwd">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Forgot Password"
+        android:textAlignment="center"
+        android:textColor="#D4D1E3"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <EditText
+        android:id="@+id/email_pass_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="20dp"
+        android:hint="Email Address"
+        android:inputType="textWebEmailAddress"
+        android:layout_below="@+id/textView1"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/btnresetpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="Reset password"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/email_pass_reset"/>
+</RelativeLayout>

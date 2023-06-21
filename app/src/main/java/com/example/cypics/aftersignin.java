@@ -8,17 +8,30 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class aftersignin extends AppCompatActivity {
 
-    Button button;
+    Button button,signout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aftersignin);
         getSupportActionBar().hide();
+        signout=findViewById(R.id.logoff);
+        signout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(aftersignin.this, MainActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
 
         button = findViewById(R.id.register);
         button.setOnClickListener(new View.OnClickListener() {

@@ -28,10 +28,10 @@
         android:background="#30ffffff"
         android:drawableLeft="@drawable/baseline_account_circle_24"
         android:drawablePadding="20dp"
-        android:hint="User Name"
+        android:hint="Email Address"
+        android:inputType="textWebEmailAddress"
         android:layout_below="@+id/textView1"
         android:padding="15dp"
-        android:autofillHints="user name"
          />
 
     <EditText
@@ -46,9 +46,27 @@
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/purple_700"
         app:passwordToggleDrawable="@drawable/ic_visibility"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/username1"/>
+
+
+    <ImageView
+        android:id="@+id/hide_show_pass"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/username1"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="350dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="Forgot Password?"
+        android:id="@+id/forgotpass"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnsignin1"/>
 
     <Button
         android:id="@+id/btnsignin1"

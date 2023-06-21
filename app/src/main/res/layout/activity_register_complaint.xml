@@ -21,7 +21,7 @@
             android:layout_marginTop="32dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="Incident_Occured_In"
+            android:text="Incident Occured In"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -64,6 +64,19 @@
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="SpeakableTextPresentCheck" />
 
+        <Spinner
+            android:id="@+id/sub_Categoryspinner"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:autofillHints="Type"
+            app:layout_constraintBottom_toBottomOf="@+id/Sub_Categoryview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.624"
+            app:layout_constraintStart_toEndOf="@+id/Sub_Categoryview"
+            app:layout_constraintTop_toTopOf="@+id/Sub_Categoryview"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <TextView
             android:id="@+id/Sub_Categoryview"
             android:layout_width="wrap_content"
@@ -97,7 +110,7 @@
             android:layout_marginTop="64dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="scenario"
+            android:text="Situation"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/Additional_Infoview"
             app:layout_constraintTop_toBottomOf="@+id/Additional_Infoview" />
@@ -193,22 +206,12 @@
             android:width="170dp"
             android:ems="10"
             android:hint="Enter here"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:inputType="time|number"
             app:layout_constraintBottom_toBottomOf="@+id/Time"
             app:layout_constraintStart_toStartOf="@+id/Incident_Occured_In"
             app:layout_constraintTop_toTopOf="@+id/Time" />
-
-        <EditText
-            android:id="@+id/Sub_Category"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:width="170dp"
-            android:ems="10"
-            android:hint="Enter here"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="@+id/Sub_Categoryview"
-            app:layout_constraintStart_toStartOf="@+id/editTime"
-            app:layout_constraintTop_toTopOf="@+id/Sub_Categoryview" />
 
         <EditText
             android:id="@+id/Additional_Info"
@@ -226,9 +229,9 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editTextpredict"
+            android:id="@+id/scenerio"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:width="170dp"
             android:ems="10"
@@ -246,6 +249,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="Status"
+            android:visibility="invisible"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="@+id/Additional_Infoview"
             app:layout_constraintTop_toBottomOf="@+id/Additional_Infoview" />
@@ -337,7 +341,7 @@
             android:hint="Select Date"
             android:inputType="date"
             app:layout_constraintBottom_toBottomOf="@+id/Date"
-            app:layout_constraintStart_toStartOf="@+id/Sub_Category"
+            app:layout_constraintStart_toStartOf="@+id/sub_Categoryspinner"
             app:layout_constraintTop_toTopOf="@+id/Date"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -375,6 +379,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Submit" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.432" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

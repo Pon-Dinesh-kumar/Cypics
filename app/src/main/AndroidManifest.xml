@@ -15,9 +15,23 @@
         android:theme="@style/Theme.Cypics"
         tools:ignore="HardcodedDebugMode">
         <activity
+            android:name=".Complaint_success"
+            android:exported="false" />
+        <activity
+            android:name=".verifyphone"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_pwd"
+            android:exported="false" />
+        <activity
+            android:name=".Login_firebase"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
             android:name=".chat_screen_kotlin"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
